@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 1rem;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+  }
+  
+  .jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #00c8eb;
+    text-align: center;
+    color: white;
+  }
+  
+  nav ul {
+    padding-inline: 4rem;
+    display: flex;
+   
+    gap: 2rem;
+  }
+   
+  nav li {
+    list-style-type: none;
+  }
+   
+  nav {
+    background-color: #00a2c6;
+    padding: 5px;
+   
+    position: sticky;
+    top: 0;
+  }
+   
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    border-radius: 5px;
+  }
+  
+  nav a:hover,
+  nav a.active {
+    background-color: #fff;
+    color: #333;
+    border-color: #fff;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  #content {
+    flex-basis: 70%;
+  }
+  
+  aside {
+    flex-basis: 25%;
+    background-color: #fff;
+    padding: 20px;
+    position: sticky;
+    top: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .card {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  
+  .featured-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .profile {
+    text-align: center;
+  }
+  
+  .profile img {
+    width: 100px;
+    border-radius: 50%;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    header {
+      text-align: center;
+    }
+  
+    nav {
+      position: static;
+      transform: none;
+      top: auto;
+      right: auto;
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    nav ul {
+      justify-content: center;
+      display: block;
+    }
+  
+    nav li {
+      margin: 0 10px;
+    }
+  
+    main aside {
+      align-self: auto;
+      position: static;
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  
